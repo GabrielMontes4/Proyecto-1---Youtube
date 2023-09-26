@@ -17,6 +17,7 @@ nav{
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 nav .section1{
@@ -53,7 +54,6 @@ nav .section1 aside{
     left: 0;
     margin-top: 55px;
     bottom: 0;
-    z-index: 10;
     flex-direction: column;
     overflow: scroll;
     overflow-x: hidden;
@@ -78,6 +78,7 @@ nav .section1 aside #lugar_logo_aside{
     padding-left: 18px;
     position: fixed;
     width: 230px;
+    margin-left: 8px;
 }
 
 nav .section1 aside #botones1{
@@ -214,20 +215,16 @@ nav .section3 button{
     width: 65px;
     height: 100vh;
     position: fixed;
-    background-color: brown;
+    
     margin-top: 50px;
     top: 0;
-    z-index: -2;
-}
-
-.mini_menu{
-    margin-top: 50px;
     margin-left: 4px;
     display: flex;
     align-items: center;
     justify-items: center;
     flex-direction: column;
     gap: 8px;
+    z-index: 0;
 }
 
 .mini_menu button{
@@ -255,23 +252,20 @@ nav .section3 button{
     background-color: rgb(46, 39, 42);
 }
 
-
-
 /*Temas de preferencia*/
 
 .temas{
-
     height: 50px;
-    width: 88%;
+    width: 94%;
     margin-top: 50px;
-    margin-right: 100px;
     top: 0;
     right: 0;
     position: fixed;
-    z-index: -2;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 15px;
+
 }
 
 .temas button{
@@ -310,7 +304,6 @@ main{
 }
 
 main div{
-    background-color: gray;
     width: 100%;
 }
 
@@ -339,3 +332,32 @@ main p{
     color: rgb(117, 117, 117);
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    nav{
+        background-color: rgb(15, 15, 15);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    nav{
+        background-color: rgb(15, 15, 15);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
